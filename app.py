@@ -232,9 +232,6 @@ def highlight_diff(orig: str, corrected: str):
     return " ".join(highlighted_orig), " ".join(highlighted_corr)
 
 def analyze_sentence(sentence: str, explanation_level_label: str):
-    ...
-
-def analyze_sentence(sentence: str, explanation_level_label: str):
     """
     explanation_level_label:
       - 사용자가 사이드바에서 고른 '설명 난이도' (초급/중급/고급)
@@ -416,7 +413,7 @@ if result:
         f"**AI가 판단한 문장 난이도:** {ai_level_ko} ({ai_level_en})"
     )
 
- col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2)
 
     # 하이라이트된 문장 HTML 생성
     orig_html, corr_html = highlight_diff(
